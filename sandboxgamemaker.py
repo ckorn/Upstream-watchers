@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import urllib2
 import re
-h=urllib2.urlopen("http://www.sandboxgamemaker.com/free-game-maker-downloads").read()
+h=urllib2.urlopen("http://www.sandboxgamemaker.com/free-game-maker-download/").read()
 f=re.compile("Platinum Arts Sandbox Free 3D Game Maker (?P<version>[\d\.]+)")
 m=f.finditer(h)
 for x in m:
