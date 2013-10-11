@@ -9,3 +9,4 @@ python legends.py > legends.html 2> legends.log
 python the-powder-toy.py > the-powder-toy.html 2> the-powder-toy.log
 python tide.py > tide.html 2> tide.log
 python sandboxgamemaker.py > sandboxgamemaker.html 2> sandboxgamemaker.log
+python codeslayer.py > codeslayer.html 2> codeslayer.log
