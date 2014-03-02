@@ -13,3 +13,4 @@ python sandboxgamemaker.py > sandboxgamemaker.html 2> sandboxgamemaker.log
 python codeslayer.py > codeslayer.html 2> codeslayer.log
 python marathon.py > marathon.html 2> marathon.log
 sh higan.sh > higan.html 2> higan.log
+python calibre.py > calibre.hzml 2> calibre.loh
