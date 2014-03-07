@@ -14,3 +14,4 @@ python codeslayer.py > codeslayer.html 2> codeslayer.log
 python marathon.py > marathon.html 2> marathon.log
 sh higan.sh > higan.html 2> higan.log
 python calibre.py > calibre.html 2> calibre.log
+python pycharm.py > pycharm.html 2> pycharm.log
