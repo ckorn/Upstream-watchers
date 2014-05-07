@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import httplib
-for link in ["linux102"]:
+for link in ["warsow15"]:
 	conn = httplib.HTTPConnection("www.warsow.net")
 	conn.request("HEAD", "/download?dl=%s"%(link))
 	res = conn.getresponse()
