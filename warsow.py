@@ -1,8 +1,15 @@
 #!/usr/bin/python
 import httplib
-for link in ["warsow15"]:
+import re
+import urllib2
+d = urllib2.urlopen("http://www.warsow.net/download").read()
+v_finder=re.compile('<option value="(?P<warsow>warsow([\d]+))">', re.M)
+m=v_finder.finditer(d)
+if not m: sys.exit()
+for link in m:
+	warsow=link.group("warsow")
 	conn = httplib.HTTPConnection("www.warsow.net")
-	conn.request("HEAD", "/download?dl=%s"%(link))
+	conn.request("HEAD", "/download?dl=%s"%(warsow))
 	res = conn.getresponse()
 	print "<!-- %d %s -->"%(res.status, res.reason)
 	h = res.getheaders()
