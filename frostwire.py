@@ -26,7 +26,7 @@ if __name__ == "__main__":
 	for dir in dirs:
 		download_dir = DIR_URL+dir
 		data = download(download_dir).split("\n")
-		tarball_re = re.compile('<a href="(?P<file>frostwire-([\d\.]+)\.noarch\.tar\.(?:gz|bz2|xz))">')
+		tarball_re = re.compile('<a href="(?P<file>frostwire(?:-|\_)([\d\.]+)\.(?:noarch|orig)\.tar\.(?:gz|bz2|xz))">')
 		for line in data:
 			search_result = re.search(tarball_re, line)
 			if not search_result: continue
