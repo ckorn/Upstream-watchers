@@ -8,7 +8,7 @@ m=v_finder.finditer(d)
 if not m: sys.exit()
 for link in m:
 	warsow=link.group("warsow")
-	conn = httplib.HTTPConnection("www.warsow.net")
+	conn = httplib.HTTPSConnection("www.warsow.net")
 	conn.request("HEAD", "/download?dl=%s"%(warsow))
 	res = conn.getresponse()
 	print "<!-- %d %s -->"%(res.status, res.reason)
