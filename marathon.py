@@ -2,7 +2,7 @@
 import httplib
 
 for game in ("marathon", "marathon2", "infinity"):
-	conn = httplib.HTTPConnection("marathon.sourceforge.net")
+	conn = httplib.HTTPSConnection("alephone.lhowon.org")
 	conn.request("HEAD", "/download/data.php?game=%s"%(game))
 	res = conn.getresponse()
 	print "<!-- %d %s -->"%(res.status, res.reason)
