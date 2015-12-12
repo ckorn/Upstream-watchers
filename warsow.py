@@ -2,13 +2,13 @@
 import httplib
 import re
 import urllib2
-d = urllib2.urlopen("http://www.warsow.net/download").read()
+d = urllib2.urlopen("https://www.warsow.gg/download").read()
 v_finder=re.compile('<option value="(?P<warsow>warsow([\d]+))">', re.M)
 m=v_finder.finditer(d)
 if not m: sys.exit()
 for link in m:
 	warsow=link.group("warsow")
-	conn = httplib.HTTPSConnection("www.warsow.net")
+	conn = httplib.HTTPSConnection("www.warsow.gg")
 	conn.request("HEAD", "/download?dl=%s"%(warsow))
 	res = conn.getresponse()
 	print "<!-- %d %s -->"%(res.status, res.reason)
