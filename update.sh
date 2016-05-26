@@ -10,7 +10,6 @@ python tide.py > tide.html 2> tide.log
 python sandboxgamemaker.py > sandboxgamemaker.html 2> sandboxgamemaker.log
 python codeslayer.py > codeslayer.html 2> codeslayer.log
 python marathon.py > marathon.html 2> marathon.log
-sh higan.sh > higan.html 2> higan.log
 python calibre.py > calibre.html 2> calibre.log
 python pycharm.py > pycharm.html 2> pycharm.log
 python xnviewmp.py > xnviewmp.html 2> xnviewmp.log
