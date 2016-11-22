@@ -13,3 +13,4 @@ python marathon.py > marathon.html 2> marathon.log
 python calibre.py > calibre.html 2> calibre.log
 python pycharm.py > pycharm.html 2> pycharm.log
 python xnviewmp.py > xnviewmp.html 2> xnviewmp.log
+python shinjiru.py > shinjiru.html 2> shinjiru.log
